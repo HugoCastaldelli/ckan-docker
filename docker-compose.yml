@@ -32,7 +32,7 @@ services:
       - solrnet
       - redisnet
     env_file:
-      - .env
+      - stack.env
     depends_on:
       db:
         condition: service_healthy
