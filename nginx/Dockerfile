@@ -15,7 +15,7 @@ RUN mkdir -p ${NGINX_DIR}/certs
 
 ENTRYPOINT \
   openssl req \
-    -subj '/C=DE/ST=Berlin/L=Berlin/O=None/CN=localhost' \
+    -subj '/C=DE/ST=Berlin/L=Berlin/O=None/CN=nas-carto.fct.unesp.br' \
     -x509 -newkey rsa:4096 \
     -nodes -keyout /etc/nginx/ssl/default_key.pem \
     -keyout ${NGINX_DIR}/certs/ckan-local.key \
